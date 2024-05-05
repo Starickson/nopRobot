@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-05-05T13:13:00.847752" rpa="false" schemaversion="5">
+<suite id="s1" name="NOPCOMMERCE" source="C:\Users\Eric\devWorkspace\pythonWorkspace\robot_framework\NOPCOMMERCE">
+<suite id="s1-s1" name="Tests" source="C:\Users\Eric\devWorkspace\pythonWorkspace\robot_framework\NOPCOMMERCE\Tests">
+<suite id="s1-s1-s1" name="Main" source="C:\Users\Eric\devWorkspace\pythonWorkspace\robot_framework\NOPCOMMERCE\Tests\main.robot">
+<test id="s1-s1-s1-t1" name="Login" line="13">
+<kw name="Login_account" owner="resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-05T13:13:01.023064" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-05T13:13:01.023064" level="FAIL">No browser is open.</msg>
+<arg>//a[@href="/login?returnUrl=%2F" and contains(.,'Log in')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-05T13:13:01.023064" elapsed="0.002000">No browser is open.</status>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>//a[@href="/login?returnUrl=%2F" and contains(.,'Log in')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-05T13:13:01.025064" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-05T13:13:01.025064" elapsed="0.001010"/>
+</kw>
+<status status="FAIL" start="2024-05-05T13:13:01.022064" elapsed="0.004010">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2024-05-05T13:13:01.021064" elapsed="0.005010">No browser is open.</status>
+</test>
+<kw name="Run Keyword" owner="BuiltIn" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<msg time="2024-05-05T13:13:01.027065" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-05T13:13:01.028076" level="FAIL">No browser is open.</msg>
+<doc>Deletes all cookies.</doc>
+<status status="FAIL" start="2024-05-05T13:13:01.027065" elapsed="0.001011">No browser is open.</status>
+</kw>
+<arg>Delete All Cookies</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="FAIL" start="2024-05-05T13:13:01.027065" elapsed="0.002001">No browser is open.</status>
+</kw>
+<doc>Cet exemple d'automatisation des tests me permet de m'exercer sur RBF
+Elle osciclle entre le site demo-nopcommerce et cdiscount</doc>
+<status status="FAIL" start="2024-05-05T13:13:00.867759" elapsed="0.161307">Suite teardown failed:
+No browser is open.</status>
+</suite>
+<status status="FAIL" start="2024-05-05T13:13:00.865756" elapsed="0.164309"/>
+</suite>
+<status status="FAIL" start="2024-05-05T13:13:00.850751" elapsed="0.180329"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="NOPCOMMERCE">NOPCOMMERCE</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">NOPCOMMERCE.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Main">NOPCOMMERCE.Tests.Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
