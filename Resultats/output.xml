@@ -1,116 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-05-05T19:22:21.006928" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-05-07T18:19:55.262442" rpa="false" schemaversion="5">
 <suite id="s1" name="Main" source="C:\Users\Eric\devWorkspace\pythonWorkspace\robot_framework\NOPCOMMERCE\Tests\main.robot">
 <test id="s1-t1" name="Start" line="11">
 <kw name="Start_webdriver" owner="resource">
 <kw name="Get Driver Path With Browser" owner="chromedriversync">
-<msg time="2024-05-05T19:22:21.149663" level="INFO">====== WebDriver manager ======</msg>
-<msg time="2024-05-05T19:22:22.122464" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
-<msg time="2024-05-05T19:22:22.370703" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
-<msg time="2024-05-05T19:22:22.596339" level="INFO">Driver [C:\Users\Eric\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache</msg>
-<msg time="2024-05-05T19:22:22.597340" level="INFO">C:\Users\Eric\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe</msg>
-<msg time="2024-05-05T19:22:22.597340" level="INFO">${driver_path} = C:\Users\Eric\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe</msg>
+<msg time="2024-05-07T18:19:55.424311" level="INFO">====== WebDriver manager ======</msg>
+<msg time="2024-05-07T18:19:57.676116" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-05-07T18:19:57.921031" level="INFO">Get LATEST chromedriver version for google-chrome</msg>
+<msg time="2024-05-07T18:19:58.165989" level="INFO">Driver [C:\Users\Eric\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe] found in cache</msg>
+<msg time="2024-05-07T18:19:58.165989" level="INFO">C:\Users\Eric\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe</msg>
+<msg time="2024-05-07T18:19:58.165989" level="INFO">${driver_path} = C:\Users\Eric\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe</msg>
 <var>${driver_path}</var>
 <arg>${browser}</arg>
-<status status="PASS" start="2024-05-05T19:22:21.149663" elapsed="1.447677"/>
+<status status="PASS" start="2024-05-07T18:19:55.424311" elapsed="2.741678"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:22.597340" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<msg time="2024-05-07T18:19:58.166989" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <arg>executable_path=${driver_path}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-05T19:22:22.597340" elapsed="1.952554"/>
+<status status="PASS" start="2024-05-07T18:19:58.165989" elapsed="2.077490"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-05T19:22:24.549894" elapsed="0.030186"/>
+<status status="PASS" start="2024-05-07T18:20:00.243479" elapsed="0.074821"/>
 </kw>
 <arg>${nop_url}</arg>
-<arg>chrome</arg>
-<status status="PASS" start="2024-05-05T19:22:21.148578" elapsed="3.431502"/>
+<arg>${chrome}</arg>
+<status status="PASS" start="2024-05-07T18:19:55.423294" elapsed="4.895006"/>
 </kw>
-<status status="PASS" start="2024-05-05T19:22:21.148578" elapsed="3.431502"/>
+<status status="PASS" start="2024-05-07T18:19:55.423294" elapsed="4.896008"/>
 </test>
 <test id="s1-t2" name="Login" line="14">
 <kw name="Login_account" owner="resource">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//a[@href="/login?returnUrl=%2F" and contains(.,'Log in')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-05T19:22:24.583089" elapsed="0.091731"/>
+<status status="PASS" start="2024-05-07T18:20:00.321806" elapsed="0.041062"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:24.675834" level="INFO">Clicking link '//a[@href="/login?returnUrl=%2F" and contains(.,'Log in')]'.</msg>
+<msg time="2024-05-07T18:20:00.363784" level="INFO">Clicking link '//a[@href="/login?returnUrl=%2F" and contains(.,'Log in')]'.</msg>
 <arg>//a[@href="/login?returnUrl=%2F" and contains(.,'Log in')]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-05T19:22:24.674820" elapsed="0.326712"/>
+<status status="PASS" start="2024-05-07T18:20:00.362868" elapsed="0.367167"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-05T19:22:27.003272" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-05-07T18:20:02.731588" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-05T19:22:25.002780" elapsed="2.000492"/>
+<status status="PASS" start="2024-05-07T18:20:00.731046" elapsed="2.000542"/>
 </kw>
-<status status="PASS" start="2024-05-05T19:22:24.582087" elapsed="2.421185"/>
+<status status="PASS" start="2024-05-07T18:20:00.321806" elapsed="2.409782"/>
 </kw>
-<status status="PASS" start="2024-05-05T19:22:24.581087" elapsed="2.423197"/>
+<status status="PASS" start="2024-05-07T18:20:00.320300" elapsed="2.411288"/>
 </test>
 <test id="s1-t3" name="SignIn" line="17">
 <kw name="EnterEmailPasswordLogin" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:27.005284" level="INFO">Typing text 'palerie@yopmail.fr' into text field 'Email'.</msg>
+<msg time="2024-05-07T18:20:02.734611" level="INFO">Typing text 'palerie@yopmail.fr' into text field 'Email'.</msg>
 <arg>Email</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-05T19:22:27.005284" elapsed="0.085996"/>
+<status status="PASS" start="2024-05-07T18:20:02.733600" elapsed="0.096678"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:27.092290" level="INFO">Typing text '123456789' into text field 'Password'.</msg>
+<msg time="2024-05-07T18:20:02.830278" level="INFO">Typing text '123456789' into text field 'Password'.</msg>
 <arg>Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-05T19:22:27.092290" elapsed="0.067898"/>
+<status status="PASS" start="2024-05-07T18:20:02.830278" elapsed="0.072371"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-05T19:22:29.160504" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-05-07T18:20:04.902807" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-05T19:22:27.160188" elapsed="2.000316"/>
+<status status="PASS" start="2024-05-07T18:20:02.902649" elapsed="2.000158"/>
 </kw>
 <arg>${email}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2024-05-05T19:22:27.005284" elapsed="2.155220"/>
+<status status="PASS" start="2024-05-07T18:20:02.733600" elapsed="2.169207"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:29.162613" level="INFO">Clicking button '//button[@type='submit' and contains(.,'Log in')]'.</msg>
+<msg time="2024-05-07T18:20:04.903895" level="INFO">Clicking button '//button[@type='submit' and contains(.,'Log in')]'.</msg>
 <arg>//button[@type='submit' and contains(.,'Log in')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-05T19:22:29.162613" elapsed="0.536470"/>
+<status status="PASS" start="2024-05-07T18:20:04.902807" elapsed="1.007601"/>
 </kw>
-<status status="PASS" start="2024-05-05T19:22:27.005284" elapsed="2.693799"/>
+<status status="PASS" start="2024-05-07T18:20:02.733600" elapsed="3.176808"/>
 </test>
-<test id="s1-t4" name="TEST" line="21">
+<test id="s1-t4" name="User_isPresent" line="21">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:30.445779" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-63.png"&gt;&lt;img src="selenium-screenshot-63.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-05-05T19:22:30.445779" level="FAIL">Element with locator '//div[@class='message-error validation-summary-errors']' not found.</msg>
+<msg time="2024-05-07T18:20:06.772014" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-07T18:20:06.772014" level="FAIL">Element with locator '//div[@class='message-error validation-summary-errors']' not found.</msg>
 <arg>//div[@class='message-error validation-summary-errors']</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-05-05T19:22:29.700078" elapsed="0.747702">Element with locator '//div[@class='message-error validation-summary-errors']' not found.</status>
+<status status="FAIL" start="2024-05-07T18:20:05.911912" elapsed="0.861109">Element with locator '//div[@class='message-error validation-summary-errors']' not found.</status>
 </kw>
-<msg time="2024-05-05T19:22:30.447780" level="INFO">${variable} = False</msg>
+<msg time="2024-05-07T18:20:06.774020" level="INFO">${variable} = False</msg>
 <var>${variable}</var>
 <arg>Element Should Be Visible</arg>
 <arg>//div[@class='message-error validation-summary-errors']</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-05-05T19:22:29.700078" elapsed="0.747702"/>
+<status status="PASS" start="2024-05-07T18:20:05.911912" elapsed="0.862108"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:30.464757" level="INFO">Element '//a[@href='/logout']' is displayed.</msg>
+<msg time="2024-05-07T18:20:06.790904" level="INFO">Element '//a[@href='/logout']' is displayed.</msg>
 <arg>//a[@href='/logout']</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.448780" elapsed="0.015977"/>
+<status status="PASS" start="2024-05-07T18:20:06.774020" elapsed="0.016884"/>
 </kw>
 <arg>'${variable}' == 'True'</arg>
 <arg>Create account</arg>
@@ -126,91 +126,437 @@
 <arg>Element Should Be Visible</arg>
 <arg>//a[@href='/logout']</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.447780" elapsed="0.017976"/>
+<status status="PASS" start="2024-05-07T18:20:06.774020" elapsed="0.016884"/>
 </kw>
-<status status="PASS" start="2024-05-05T19:22:29.700078" elapsed="0.765678"/>
+<status status="PASS" start="2024-05-07T18:20:05.910408" elapsed="0.880496"/>
 </test>
-<test id="s1-t5" name="Currency" line="37">
+<test id="s1-t5" name="Currency" line="36">
 <kw name="SelectCurrency" owner="resource">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:30.466704" level="INFO">Selecting options from selection list 'customerCurrency' by label Euro.</msg>
+<msg time="2024-05-07T18:20:06.792433" level="INFO">Selecting options from selection list 'customerCurrency' by label Euro.</msg>
 <arg>customerCurrency</arg>
 <arg>${currency}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.466704" elapsed="0.027484"/>
+<status status="PASS" start="2024-05-07T18:20:06.792433" elapsed="0.028066"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:30.502188" level="INFO">Current page contains text 'Euro'.</msg>
+<msg time="2024-05-07T18:20:06.832024" level="INFO">Current page contains text 'Euro'.</msg>
 <arg>Euro</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.494188" elapsed="0.009010"/>
+<status status="PASS" start="2024-05-07T18:20:06.820499" elapsed="0.011525"/>
 </kw>
 <kw name="Get Selected List Label" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:30.537156" level="INFO">${var} = Euro</msg>
+<msg time="2024-05-07T18:20:06.868359" level="INFO">${var} = Euro</msg>
 <var>${var}</var>
 <arg>customerCurrency</arg>
 <doc>Returns the label of selected option from selection list ``locator``.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.503198" elapsed="0.033958"/>
+<status status="PASS" start="2024-05-07T18:20:06.832535" elapsed="0.035824"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-05-05T19:22:30.538165" level="INFO">Euro</msg>
+<msg time="2024-05-07T18:20:06.869359" level="INFO">Euro</msg>
 <arg>${var}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.537156" elapsed="0.001009"/>
+<status status="PASS" start="2024-05-07T18:20:06.868359" elapsed="0.001000"/>
 </kw>
 <arg>${euro_currency}</arg>
-<status status="PASS" start="2024-05-05T19:22:30.466704" elapsed="0.071461"/>
+<status status="PASS" start="2024-05-07T18:20:06.792433" elapsed="0.076926"/>
 </kw>
-<status status="PASS" start="2024-05-05T19:22:30.466704" elapsed="0.071461"/>
+<status status="PASS" start="2024-05-07T18:20:06.791913" elapsed="0.077446"/>
 </test>
-<test id="s1-t6" name="Select_random_cat" line="43">
+<test id="s1-t6" name="Select_random_cat" line="41">
+<for flavor="IN RANGE">
+<iter>
 <kw name="Get Random Number" owner="utilitaires">
-<msg time="2024-05-05T19:22:30.539156" level="INFO">${var} = 5</msg>
+<msg time="2024-05-07T18:20:06.870374" level="INFO">${var} = 6</msg>
 <var>${var}</var>
 <doc>Retourne un nombre aléatoire entre 0 et 6.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.539156" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T18:20:06.870374" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-05-05T19:22:30.539156" level="INFO">Random Number: 5</msg>
+<msg time="2024-05-07T18:20:06.870374" level="INFO">Random Number: 6</msg>
 <arg>Random Number: ${var}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.539156" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-07T18:20:06.870374" elapsed="0.000000"/>
 </kw>
 <kw name="Select_category_by_random" owner="resource">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[${var}]/a</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.540157" elapsed="0.013041"/>
+<status status="PASS" start="2024-05-07T18:20:06.871894" elapsed="0.014060"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-05T19:22:30.553198" level="INFO">Clicking link '//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[5]/a'.</msg>
+<msg time="2024-05-07T18:20:06.885954" level="INFO">Clicking link '//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[6]/a'.</msg>
 <arg>//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[${var}]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.553198" elapsed="0.412590"/>
+<status status="PASS" start="2024-05-07T18:20:06.885954" elapsed="0.515855"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-05T19:22:33.967306" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-05-07T18:20:10.402327" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-05T19:22:30.966783" elapsed="3.000523"/>
+<status status="PASS" start="2024-05-07T18:20:07.401809" elapsed="3.000518"/>
 </kw>
 <arg>${var}</arg>
-<status status="PASS" start="2024-05-05T19:22:30.540157" elapsed="3.427149"/>
+<status status="PASS" start="2024-05-07T18:20:06.871894" elapsed="3.530433"/>
 </kw>
-<status status="PASS" start="2024-05-05T19:22:30.538165" elapsed="3.430239"/>
+<kw name="Check_side_menu" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:10.402327" level="INFO">Clicking element '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[6]'.</msg>
+<arg>locator=//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:10.402327" elapsed="0.033767"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:10.402327" elapsed="0.034289"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T18:20:12.437607" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T18:20:10.436616" elapsed="2.000991"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:12.856078" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-07T18:20:12.856078" level="FAIL">Element with locator '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[6]//ul' not found.</msg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]//ul</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-07T18:20:12.437607" elapsed="0.419470">Element with locator '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[6]//ul' not found.</status>
+</kw>
+<msg time="2024-05-07T18:20:12.857077" level="INFO">${variable} = False</msg>
+<var>${variable}</var>
+<arg>Element Should Be Visible</arg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]//ul</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-07T18:20:12.437607" elapsed="0.419470"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Valid_product_without_subtitle" owner="resource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:12.858075" level="INFO">Clicking link '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[6]/a'.</msg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:12.858075" elapsed="0.360928"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:13.220005" level="INFO">Clicking link '//div[@class='item-box'][1]/div[@class='product-item']/div[@class='picture']/a'.</msg>
+<arg>//div[@class='item-box'][1]/div[@class='product-item']/div[@class='picture']/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:13.220005" elapsed="1.006074"/>
+</kw>
+<kw name="Add_to_cart_button" owner="resource">
+<try>
+<branch type="TRY">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:14.228083" level="INFO">Clicking button '//button[starts-with(@id,'add-to-cart-button')]'.</msg>
+<arg>//button[starts-with(@id,'add-to-cart-button')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:14.227079" elapsed="0.053689"/>
+</kw>
+<status status="PASS" start="2024-05-07T18:20:14.227079" elapsed="0.053689"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log" owner="BuiltIn">
+<arg>message=Ce produit n'a pu être ajouté au panier</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-05-07T18:20:14.281768" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-07T18:20:14.280768" elapsed="0.001000"/>
+</branch>
+<status status="PASS" start="2024-05-07T18:20:14.227079" elapsed="0.054689"/>
+</try>
+<status status="PASS" start="2024-05-07T18:20:14.227079" elapsed="0.054689"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:12.857077" elapsed="1.424691"/>
+</kw>
+<arg>'${variable}' == 'True'</arg>
+<arg>Valid_product_with_subtitle</arg>
+<arg>${var}</arg>
+<arg>ELSE</arg>
+<arg>Valid_product_without_subtitle</arg>
+<arg>${var}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-07T18:20:12.857077" elapsed="1.424691"/>
+</kw>
+<var name="${item}">0</var>
+<status status="PASS" start="2024-05-07T18:20:06.870374" elapsed="7.411394"/>
+</iter>
+<iter>
+<kw name="Get Random Number" owner="utilitaires">
+<msg time="2024-05-07T18:20:14.282274" level="INFO">${var} = 5</msg>
+<var>${var}</var>
+<doc>Retourne un nombre aléatoire entre 0 et 6.</doc>
+<status status="PASS" start="2024-05-07T18:20:14.282274" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-07T18:20:14.282274" level="INFO">Random Number: 5</msg>
+<arg>Random Number: ${var}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-07T18:20:14.282274" elapsed="0.000000"/>
+</kw>
+<kw name="Select_category_by_random" owner="resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[${var}]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T18:20:14.282274" elapsed="0.014513"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:14.296787" level="INFO">Clicking link '//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[5]/a'.</msg>
+<arg>//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[${var}]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:14.296787" elapsed="1.644872"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T18:20:18.942055" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T18:20:15.941659" elapsed="3.000396"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:14.282274" elapsed="4.659781"/>
+</kw>
+<kw name="Check_side_menu" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:18.942055" level="INFO">Clicking element '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[5]'.</msg>
+<arg>locator=//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:18.942055" elapsed="0.028089"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:18.942055" elapsed="0.028089"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T18:20:20.970346" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T18:20:18.970144" elapsed="2.000202"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:21.390970" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-88.png"&gt;&lt;img src="selenium-screenshot-88.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-07T18:20:21.390970" level="FAIL">Element with locator '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[5]//ul' not found.</msg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]//ul</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-07T18:20:20.970346" elapsed="0.421624">Element with locator '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[5]//ul' not found.</status>
+</kw>
+<msg time="2024-05-07T18:20:21.391970" level="INFO">${variable} = False</msg>
+<var>${variable}</var>
+<arg>Element Should Be Visible</arg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]//ul</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-07T18:20:20.970346" elapsed="0.421624"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Valid_product_without_subtitle" owner="resource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:21.393265" level="INFO">Clicking link '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[5]/a'.</msg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:21.393265" elapsed="0.337740"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:21.731005" level="INFO">Clicking link '//div[@class='item-box'][1]/div[@class='product-item']/div[@class='picture']/a'.</msg>
+<arg>//div[@class='item-box'][1]/div[@class='product-item']/div[@class='picture']/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:21.731005" elapsed="0.397818"/>
+</kw>
+<kw name="Add_to_cart_button" owner="resource">
+<try>
+<branch type="TRY">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:22.128823" level="INFO">Clicking button '//button[starts-with(@id,'add-to-cart-button')]'.</msg>
+<arg>//button[starts-with(@id,'add-to-cart-button')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:22.128823" elapsed="0.048187"/>
+</kw>
+<status status="PASS" start="2024-05-07T18:20:22.128823" elapsed="0.048187"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log" owner="BuiltIn">
+<arg>message=Ce produit n'a pu être ajouté au panier</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-05-07T18:20:22.177010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-07T18:20:22.177010" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-05-07T18:20:22.128823" elapsed="0.048187"/>
+</try>
+<status status="PASS" start="2024-05-07T18:20:22.128823" elapsed="0.048187"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:21.391970" elapsed="0.785040"/>
+</kw>
+<arg>'${variable}' == 'True'</arg>
+<arg>Valid_product_with_subtitle</arg>
+<arg>${var}</arg>
+<arg>ELSE</arg>
+<arg>Valid_product_without_subtitle</arg>
+<arg>${var}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-07T18:20:21.391970" elapsed="0.785040"/>
+</kw>
+<var name="${item}">1</var>
+<status status="PASS" start="2024-05-07T18:20:14.282274" elapsed="7.895745"/>
+</iter>
+<iter>
+<kw name="Get Random Number" owner="utilitaires">
+<msg time="2024-05-07T18:20:22.178019" level="INFO">${var} = 4</msg>
+<var>${var}</var>
+<doc>Retourne un nombre aléatoire entre 0 et 6.</doc>
+<status status="PASS" start="2024-05-07T18:20:22.178019" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-07T18:20:22.178019" level="INFO">Random Number: 4</msg>
+<arg>Random Number: ${var}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-07T18:20:22.178019" elapsed="0.000000"/>
+</kw>
+<kw name="Select_category_by_random" owner="resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[${var}]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T18:20:22.178019" elapsed="0.015733"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:22.193752" level="INFO">Clicking link '//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[4]/a'.</msg>
+<arg>//div[@class="header-menu"]//ul[@class="top-menu notmobile"]/li[${var}]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:22.193752" elapsed="0.427946"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T18:20:25.623180" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T18:20:22.621698" elapsed="3.001482"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:22.178019" elapsed="3.445161"/>
+</kw>
+<kw name="Check_side_menu" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:25.623685" level="INFO">Clicking element '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[4]'.</msg>
+<arg>locator=//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:25.623685" elapsed="0.028082"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:25.623180" elapsed="0.029698"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T18:20:27.653182" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T18:20:25.652878" elapsed="2.000304"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:28.169265" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-89.png"&gt;&lt;img src="selenium-screenshot-89.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-07T18:20:28.169265" level="FAIL">Element with locator '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[4]//ul' not found.</msg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]//ul</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-07T18:20:27.653182" elapsed="0.517084">Element with locator '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[4]//ul' not found.</status>
+</kw>
+<msg time="2024-05-07T18:20:28.170266" level="INFO">${variable} = False</msg>
+<var>${variable}</var>
+<arg>Element Should Be Visible</arg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]//ul</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-05-07T18:20:27.653182" elapsed="0.517084"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Valid_product_without_subtitle" owner="resource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:28.170266" level="INFO">Clicking link '//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[4]/a'.</msg>
+<arg>//div[@class='block block-category-navigation']//div[@class='listbox']/ul/li[${var}]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:28.170266" elapsed="0.344365"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:28.514631" level="INFO">Clicking link '//div[@class='item-box'][1]/div[@class='product-item']/div[@class='picture']/a'.</msg>
+<arg>//div[@class='item-box'][1]/div[@class='product-item']/div[@class='picture']/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:28.514631" elapsed="0.364456"/>
+</kw>
+<kw name="Add_to_cart_button" owner="resource">
+<try>
+<branch type="TRY">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:28.881279" level="INFO">Clicking button '//button[starts-with(@id,'add-to-cart-button')]'.</msg>
+<arg>//button[starts-with(@id,'add-to-cart-button')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:28.880087" elapsed="0.050885"/>
+</kw>
+<status status="PASS" start="2024-05-07T18:20:28.880087" elapsed="0.050885"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log" owner="BuiltIn">
+<arg>message=Ce produit n'a pu être ajouté au panier</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-05-07T18:20:28.930972" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-07T18:20:28.930972" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-05-07T18:20:28.880087" elapsed="0.050885"/>
+</try>
+<status status="PASS" start="2024-05-07T18:20:28.880087" elapsed="0.050885"/>
+</kw>
+<arg>${var}</arg>
+<status status="PASS" start="2024-05-07T18:20:28.170266" elapsed="0.760706"/>
+</kw>
+<arg>'${variable}' == 'True'</arg>
+<arg>Valid_product_with_subtitle</arg>
+<arg>${var}</arg>
+<arg>ELSE</arg>
+<arg>Valid_product_without_subtitle</arg>
+<arg>${var}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-07T18:20:28.170266" elapsed="0.760706"/>
+</kw>
+<var name="${item}">2</var>
+<status status="PASS" start="2024-05-07T18:20:22.178019" elapsed="6.752953"/>
+</iter>
+<var>${item}</var>
+<value>3</value>
+<status status="PASS" start="2024-05-07T18:20:06.870374" elapsed="22.060598"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T18:20:32.932464" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T18:20:28.931970" elapsed="4.000494"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='header-upper']//ul/li[@id='topcartlink']/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-07T18:20:32.932464" elapsed="0.014546"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-07T18:20:32.947010" level="INFO">Clicking link '//div[@class='header-upper']//ul/li[@id='topcartlink']/a'.</msg>
+<arg>//div[@class='header-upper']//ul/li[@id='topcartlink']/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T18:20:32.947010" elapsed="1.558151"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-07T18:20:44.506383" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-07T18:20:34.505161" elapsed="10.001222"/>
+</kw>
+<status status="PASS" start="2024-05-07T18:20:06.870374" elapsed="37.636009"/>
 </test>
 <kw name="Run Keyword" owner="BuiltIn" type="TEARDOWN">
 <kw name="Delete All Cookies" owner="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" start="2024-05-05T19:22:33.971325" elapsed="0.036002"/>
+<status status="PASS" start="2024-05-07T18:20:44.507398" elapsed="0.034935"/>
 </kw>
 <arg>Delete All Cookies</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="PASS" start="2024-05-05T19:22:33.971325" elapsed="0.036002"/>
+<status status="PASS" start="2024-05-07T18:20:44.507398" elapsed="0.034935"/>
 </kw>
 <doc>Cet exemple d'automatisation des tests me permet de m'exercer sur RBF
 Elle osciclle entre le site demo-nopcommerce et cdiscount</doc>
-<status status="PASS" start="2024-05-05T19:22:21.007929" elapsed="12.999398"/>
+<status status="PASS" start="2024-05-07T18:19:55.263460" elapsed="49.278873"/>
 </suite>
 <statistics>
 <total>
